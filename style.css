@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*cabecalho do portifolio*/
+header{
+    width: 100%;
+    height: 200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 5%;
+    background-color: yellow;
+    z-index: 2;
+}
+
+header img{
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    border: 2px solid;
+}
+nav a:hover {
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+}
+
+main{
+    padding: 16px 5%;
+    background-color:#D8BFD8 ;
+}
+
+/*Seçao home*/
+.Inicio{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem 2rem;
+    gap: 2rem;
+}
+.Inicio-image{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.Inicio-image img{
+    
+}
+
+/*Seçao sobre mim*/
+.SobreMim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.SobreMim h1{
+    font-size: 24pt;
+    margin-bottom: 15px;
+}
+.SobreMim h2{
+    font-size: 20pt;
+    margin-bottom: 15px;
+}
+.SobreMim p, li{
+    font-size: 16pt;
+    margin: 15px;
+}
+
+/*seçao dos portifolios*/
+#Portifolio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    width: 500px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solic black;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 8px;
+}
+.card h2{
+    font-size: 18pt;
+    margin: 15px 0 10px;
+    color: black;
+}
+.card p{
+    font-size: 15pt;
+    margin: 0 0 15px;
+}
+.card button{
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+.card:hover {
+    transform: scale(1.02);
+    background-color: #222;
+    color: white;
+    /* NÃO altere o padding */
+}
+.card:hover h2,
+.card:hover p
+ {
+    color: white;
+}
+
