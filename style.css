@@ -375,7 +375,9 @@ h1 {
         color: whitesmoke;
     }
 
-    .Inicio-image img {}
+    .Inicio-image img {
+        width: 80%;
+    }
 
     /*Seçao sobre mim*/
     .SobreMim {
